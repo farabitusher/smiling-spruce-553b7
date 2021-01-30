@@ -36,16 +36,14 @@ fields:
 - type: boolean
   name: enable_cards
   label: Enable cards
-  description: >-
-    Display posts as cards, i.e. add border, background and some padding around
-    post content
+  description: Display posts as cards, i.e. add border, background and some padding
+    around post content
   default: false
 - type: boolean
   name: show_recent
   label: Show recent posts only
-  description: >-
-    Show the specified number of recent posts. Should not be used with author,
-    category and tag filters
+  description: Show the specified number of recent posts. Should not be used with
+    author, category and tag filters
   default: false
   config:
     required: true
@@ -104,8 +102,7 @@ fields:
 - type: select
   name: align
   label: Section alignment
-  description: >-
-    The horizontal alignment of the section content (title, subtitle, action
+  description: The horizontal alignment of the section content (title, subtitle, action
     buttons)
   default: center
   config:
@@ -181,8 +178,7 @@ fields:
 - type: select
   name: background_image_position
   label: Background image position
-  description: >-
-    The starting position of a background image. The first value is the
+  description: The starting position of a background image. The first value is the
     horizontal position, and the second value is the vertical
   default: center center
   config:

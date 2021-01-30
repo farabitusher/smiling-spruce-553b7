@@ -18,7 +18,7 @@ fields:
 - type: boolean
   name: has_primary_nav
   label: Enable primary navigation menu
-  description: 'Display the navigation menu on the left side, next to the site title/logo'
+  description: Display the navigation menu on the left side, next to the site title/logo
   default: true
 - type: field_group_list
   name: primary_nav_links
@@ -85,8 +85,7 @@ fields:
 - type: text
   name: anncmnt_id
   label: Announcement ID
-  description: >-
-    A unique identifier, required if close button is enabled. Must be updated
+  description: A unique identifier, required if close button is enabled. Must be updated
     each time the announcement content changes
 - type: text
   name: type

@@ -13,7 +13,7 @@ fields:
   description: The subtitle of the item displayed below the title
 - type: select
   name: title_align
-  label: 'Title, subtitle alignment'
+  label: Title, subtitle alignment
   description: The horizontal alignment of the item title and subtitle
   default: left
   config:
@@ -100,9 +100,8 @@ fields:
 - type: select
   name: image_width
   label: Image container width
-  description: >-
-    The image container width as a percentage of the item width. Used only when
-    the image position is set to "left" or "right"
+  description: The image container width as a percentage of the item width. Used only
+    when the image position is set to "left" or "right"
   default: fifty
   config:
     source:
@@ -128,9 +127,8 @@ fields:
 - type: boolean
   name: image_has_padding
   label: Image padding
-  description: >-
-    Add padding (space) around the image. Used only when "Enable cards" is set
-    to true
+  description: Add padding (space) around the image. Used only when "Enable cards"
+    is set to true
   default: false
 - type: text
   name: type

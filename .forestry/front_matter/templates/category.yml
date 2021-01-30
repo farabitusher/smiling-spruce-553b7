@@ -5,13 +5,13 @@ fields:
 - type: text
   name: id
   label: ID
-  description: 'A unique identifier used when filtering posts, e.g. "news"'
+  description: A unique identifier used when filtering posts, e.g. "news"
   config:
     required: true
 - type: text
   name: link
   label: Link
-  description: 'The link to the category page, e.g. "blog/category/news"'
+  description: The link to the category page, e.g. "blog/category/news"
 - type: text
   name: title
   label: Title

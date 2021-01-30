@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
-webhook_url: 'https://api.stackbit.com/project/601553b7faecfb0016ac930f/webhook/forestry'
+webhook_url: https://api.stackbit.com/project/601553b7faecfb0016ac930f/webhook/forestry
 sections:
 - type: document
   path: site-metadata.json
@@ -13,7 +13,7 @@ sections:
   path: src/data/team
   label: Person
   create: all
-  match: '**/*'
+  match: "**/*"
   new_doc_ext: yaml
   templates:
   - person
@@ -21,7 +21,7 @@ sections:
   path: src/data/categories
   label: Category
   create: all
-  match: '**/*'
+  match: "**/*"
   new_doc_ext: yaml
   templates:
   - category
@@ -29,7 +29,7 @@ sections:
   path: src/data/tags
   label: Tag
   create: all
-  match: '**/*'
+  match: "**/*"
   new_doc_ext: yaml
   templates:
   - tag
@@ -37,14 +37,19 @@ sections:
   path: src/pages
   label: Pages
   create: all
-  match: '**/*'
+  match: "**/*"
   new_doc_ext: md
   templates:
   - page
   - post
   - advanced
 upload_dir: static/images
-public_path: /images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
+build:
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  instant_preview_command: npm run develop

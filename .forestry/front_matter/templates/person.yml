@@ -5,13 +5,13 @@ fields:
 - type: text
   name: id
   label: ID
-  description: 'A unique identifier used when filtering posts, e.g. "john-doe"'
+  description: A unique identifier used when filtering posts, e.g. "john-doe"
   config:
     required: true
 - type: text
   name: link
   label: Link
-  description: 'The link to the author page, e.g. "blog/author/john-doe"'
+  description: The link to the author page, e.g. "blog/author/john-doe"
 - type: text
   name: first_name
   label: First name

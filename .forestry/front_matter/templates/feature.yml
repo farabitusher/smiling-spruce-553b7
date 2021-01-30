@@ -57,8 +57,7 @@ fields:
 - type: select
   name: media_width
   label: Image or video width
-  description: >-
-    The image or video container width as a percentage of the feature width.
+  description: The image or video container width as a percentage of the feature width.
     Used only when the image or video position is set to "left" or "right"
   default: fifty
   config:

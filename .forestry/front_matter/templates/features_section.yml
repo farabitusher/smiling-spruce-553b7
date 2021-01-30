@@ -36,7 +36,7 @@ fields:
 - type: select
   name: align
   label: Section alignment
-  description: 'The horizontal alignment of the section content (title, subtitle)'
+  description: The horizontal alignment of the section content (title, subtitle)
   default: center
   config:
     source:
@@ -111,8 +111,7 @@ fields:
 - type: select
   name: background_image_position
   label: Background image position
-  description: >-
-    The starting position of a background image. The first value is the
+  description: The starting position of a background image. The first value is the
     horizontal position, and the second value is the vertical
   default: center center
   config:

@@ -13,7 +13,7 @@ fields:
   description: The subtitle of the section displayed below the title
 - type: select
   name: title_align
-  label: 'Title, subtitle alignment'
+  label: Title, subtitle alignment
   description: The horizontal alignment of the section title and subtitle
   default: left
   config:
@@ -59,9 +59,8 @@ fields:
 - type: select
   name: form_width
   label: Form width
-  description: >-
-    The form container width as a percentage of the section width. Used only
-    when the form position is set to "left" or "right"
+  description: The form container width as a percentage of the section width. Used
+    only when the form position is set to "left" or "right"
   default: fifty
   config:
     source:
@@ -73,9 +72,8 @@ fields:
 - type: select
   name: form_layout
   label: Form layout
-  description: >-
-    The layout of the form. "Inline" layout can only be used if the form has one
-    input field
+  description: The layout of the form. "Inline" layout can only be used if the form
+    has one input field
   default: stacked
   config:
     source:
@@ -86,8 +84,7 @@ fields:
 - type: boolean
   name: enable_card
   label: Display form in a box
-  description: >-
-    Display form inside a box, i.e. add border and background to the form
+  description: Display form inside a box, i.e. add border and background to the form
     container
   default: false
 - type: text
@@ -99,9 +96,8 @@ fields:
 - type: text
   name: form_action
   label: Form action
-  description: >-
-    The path of your custom "success" page, if you want to replace the default
-    success message.
+  description: The path of your custom "success" page, if you want to replace the
+    default success message.
 - type: field_group_list
   name: form_fields
   label: Form fields
@@ -120,9 +116,8 @@ fields:
 - type: select
   name: align_vert
   label: Section vertical alignment
-  description: >-
-    The vertical alignment of the section text content and form. Used only when
-    the form position is set to "left" or "right"
+  description: The vertical alignment of the section text content and form. Used only
+    when the form position is set to "left" or "right"
   default: top
   config:
     source:
@@ -197,8 +192,7 @@ fields:
 - type: select
   name: background_image_position
   label: Background image position
-  description: >-
-    The starting position of a background image. The first value is the
+  description: The starting position of a background image. The first value is the
     horizontal position, and the second value is the vertical
   default: center center
   config:

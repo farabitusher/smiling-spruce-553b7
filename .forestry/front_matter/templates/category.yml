@@ -1,0 +1,32 @@
+---
+label: Category
+hide_body: true
+fields:
+- type: text
+  name: id
+  label: ID
+  description: 'A unique identifier used when filtering posts, e.g. "news"'
+  config:
+    required: true
+- type: text
+  name: link
+  label: Link
+  description: 'The link to the category page, e.g. "blog/category/news"'
+- type: text
+  name: title
+  label: Title
+  description: The title of the category
+  config:
+    required: true
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: category
+  config:
+    required: true
+pages:
+- src/data/categories/general.yaml
+- src/data/categories/news.yaml
+- src/data/categories/tutorials.yaml

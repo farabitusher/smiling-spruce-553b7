@@ -1,0 +1,98 @@
+---
+label: Header configuration
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Header title
+  description: The title displayed in the header if logo image not specified
+- type: file
+  name: logo
+  label: Logo
+  description: The logo image displayed on the left side
+- type: text
+  name: logo_alt
+  label: Logo alt text
+  description: The alt text of the logo image
+- type: boolean
+  name: has_primary_nav
+  label: Enable primary navigation menu
+  description: 'Display the navigation menu on the left side, next to the site title/logo'
+  default: true
+- type: field_group_list
+  name: primary_nav_links
+  label: Primary navigation menu links
+  description: List of navigation links
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: boolean
+  name: has_secondary_nav
+  label: Enable secondary navigation menu
+  description: Display the navigation menu on the right side
+  default: true
+- type: field_group_list
+  name: secondary_nav_links
+  label: Secondary navigation menu links
+  description: List of navigation links
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: boolean
+  name: has_anncmnt
+  label: Enable announcement
+  description: Display the announcement above the site header
+  default: false
+- type: textarea
+  name: anncmnt_content
+  label: Announcement content
+  description: The text content of the announcement
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: select
+  name: anncmnt_align
+  label: Announcement horizontal alignment
+  description: The horizontal alignment of the announcement content
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: boolean
+  name: anncmnt_is_home_only
+  label: Show on home page
+  description: Display the announcement on the home page only.
+  default: false
+- type: boolean
+  name: anncmnt_has_close
+  label: Enable announcement close
+  description: Display the announcement close button
+  default: false
+- type: text
+  name: anncmnt_id
+  label: Announcement ID
+  description: >-
+    A unique identifier, required if close button is enabled. Must be updated
+    each time the announcement content changes
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: header
+  config:
+    required: true

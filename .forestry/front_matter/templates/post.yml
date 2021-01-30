@@ -1,0 +1,93 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the post
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the post
+- type: datetime
+  name: date
+  label: Date
+  description: The publish date of the post
+  config:
+    required: true
+- type: select
+  name: author
+  label: Author
+  description: The author of the post
+  config:
+    source:
+      type: pages
+      section: person
+- type: list
+  name: categories
+  label: Categories
+  description: The categories of the post
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: category
+- type: list
+  name: tags
+  label: Tags
+  description: The tags of the post
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: tag
+- type: text
+  name: excerpt
+  label: Excerpt
+  description: The excerpt of the post displayed in the blog feed and meta data
+- type: file
+  name: thumb_image
+  label: Image (blog feed)
+  description: The image displayed in the blog feed
+- type: text
+  name: thumb_image_alt
+  label: Image alt text (blog feed)
+  description: The alt text of the blog feed image
+- type: file
+  name: image
+  label: Image (single post)
+  description: The image displayed in the single post
+- type: text
+  name: image_alt
+  label: Image alt text (single post)
+  description: The alt text of the single post image
+- type: select
+  name: image_position
+  label: Image position (single post)
+  description: >-
+    The featured image position in the blog post relative to the post header
+    content
+  default: top
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - top
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: post
+  config:
+    required: true
+pages:
+- src/pages/blog/post-1.md
+- src/pages/blog/post-2.md
+- src/pages/blog/post-3.md
+- src/pages/blog/post-4.md
+- src/pages/blog/post-5.md

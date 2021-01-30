@@ -1,0 +1,51 @@
+---
+label: Advanced page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the page
+  config:
+    required: true
+- type: text
+  name: excerpt
+  label: Excerpt
+  description: The excerpt of the page displayed in meta data
+- type: blocks
+  name: sections
+  label: Sections
+  description: Page sections
+  template_types:
+  - hero_section
+  - features_section
+  - grid_section
+  - blog_feed_section
+  - cta_section
+  - form_section
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: advanced
+  config:
+    required: true
+pages:
+- src/pages/about.md
+- src/pages/blog/author/dianne-ameter.md
+- src/pages/blog/author/gustav-purpleson.md
+- src/pages/blog/author/hilary-ouse.md
+- src/pages/blog/category/general.md
+- src/pages/blog/category/news.md
+- src/pages/blog/category/tutorials.md
+- src/pages/blog/index.md
+- src/pages/blog/tag/jamstack.md
+- src/pages/blog/tag/netlify.md
+- src/pages/blog/tag/sourcebit.md
+- src/pages/blog/tag/stackbit.md
+- src/pages/contact.md
+- src/pages/features.md
+- src/pages/general-enquiries.md
+- src/pages/index.md
+- src/pages/pricing.md
+- src/pages/thank-you.md

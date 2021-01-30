@@ -1,0 +1,91 @@
+---
+label: Feature
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the feature
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the feature displayed below the title
+- type: textarea
+  name: content
+  label: Content
+  description: The text content of the feature
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: actions
+  label: Action buttons
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: file
+  name: image
+  label: Image
+  description: The image of the feature
+- type: text
+  name: image_alt
+  label: Image alt text
+  description: The alt text of the feature image
+- type: textarea
+  name: video_embed_html
+  label: Video Embed Code
+  description: The HTML embed code for your video
+- type: select
+  name: media_position
+  label: Image or video position
+  description: The position of the image or video relative to the text content
+  default: top
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - top
+    - bottom
+- type: select
+  name: media_width
+  label: Image or video width
+  description: >-
+    The image or video container width as a percentage of the feature width.
+    Used only when the image or video position is set to "left" or "right"
+  default: fifty
+  config:
+    source:
+      type: custom
+    options:
+    - thirty-three
+    - fourty
+    - fifty
+    - sixty
+- type: select
+  name: align
+  label: Feature alignment
+  description: The horizontal alignment of the feature content
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: feature
+  config:
+    required: true

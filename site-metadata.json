@@ -1,0 +1,203 @@
+{
+    "title": "Stackbit DIY Theme",
+    "description": "A \"do it yourself\" theme for Stackbit",
+    "layout": "boxed",
+    "style": "classic",
+    "palette": "green",
+    "mode": "light",
+    "base_font": "serif",
+    "header": {
+        "type": "header",
+        "template": "header",
+        "title": "DIY",
+        "logo": "images/classic/logo.svg",
+        "logo_alt": "DIY logo",
+        "has_primary_nav": true,
+        "primary_nav_links": [
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Features",
+                "url": "/features",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Pricing",
+                "url": "/pricing",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "About",
+                "url": "/about",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Blog",
+                "url": "/blog",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Style Guide",
+                "url": "/style-guide",
+                "style": "link"
+            }
+        ],
+        "has_secondary_nav": true,
+        "secondary_nav_links": [
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Contact",
+                "url": "/contact",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Get Started",
+                "url": "/pricing",
+                "style": "primary"
+            }
+        ],
+        "has_anncmnt": true,
+        "anncmnt_content": "Curabitur ac tellus mattis, tempor ipsum eu, eleifend sapien. **[Learn More](/pricing/)**",
+        "anncmnt_align": "left",
+        "anncmnt_is_home_only": true,
+        "anncmnt_has_close": true,
+        "anncmnt_id": "new-features"
+    },
+    "footer": {
+        "type": "footer",
+        "template": "footer",
+        "logo": "images/classic/logo.svg",
+        "logo_alt": "DIY logo",
+        "has_primary_nav": true,
+        "primary_nav_title": "Company",
+        "primary_nav_links": [
+            {
+                "type": "action",
+                "template": "action",
+                "label": "About",
+                "url": "/about",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Style Guide",
+                "url": "/style-guide",
+                "style": "link"
+            }
+        ],
+        "has_secondary_nav": true,
+        "secondary_nav_title": "Blog",
+        "secondary_nav_links": [
+            {
+                "type": "action",
+                "template": "action",
+                "label": "News",
+                "url": "/blog/category/news",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "General",
+                "url": "/blog/category/general",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Tutorials",
+                "url": "/blog/category/tutorials",
+                "style": "link"
+            }
+        ],
+        "has_tertiary_nav": true,
+        "tertiary_nav_title": "Legal",
+        "tertiary_nav_links": [
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Terms & Conditions",
+                "url": "/terms-conditions",
+                "style": "link"
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Privacy Policy",
+                "url": "/privacy-policy",
+                "style": "link"
+            }
+        ],
+        "has_social": true,
+        "social_links": [
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Twitter",
+                "url": "https://twitter.com/",
+                "style": "link",
+                "has_icon": true,
+                "icon": "twitter",
+                "icon_position": "center",
+                "new_window": true
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "GitHub",
+                "url": "https://github.com/",
+                "style": "link",
+                "has_icon": true,
+                "icon": "github",
+                "icon_position": "center",
+                "new_window": true
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/",
+                "style": "link",
+                "has_icon": true,
+                "icon": "linkedin",
+                "icon_position": "center",
+                "new_window": true
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "YouTube",
+                "url": "https://www.youtube.com/",
+                "style": "link",
+                "has_icon": true,
+                "icon": "youtube",
+                "icon_position": "center",
+                "new_window": true
+            },
+            {
+                "type": "action",
+                "template": "action",
+                "label": "Vimeo",
+                "url": "https://vimeo.com/",
+                "style": "link",
+                "has_icon": true,
+                "icon": "vimeo",
+                "icon_position": "center",
+                "new_window": true
+            }
+        ],
+        "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=diy&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>"
+    }
+}

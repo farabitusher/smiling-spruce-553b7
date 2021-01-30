@@ -1,0 +1,112 @@
+---
+label: Footer configuration
+hide_body: true
+display_field: content
+fields:
+- type: file
+  name: logo
+  label: Logo
+  description: The logo image displayed on the left side
+- type: text
+  name: logo_alt
+  label: Logo alt text
+  description: The alt text of the logo image
+- type: boolean
+  name: has_primary_nav
+  label: Enable primary navigation menu
+  description: Display the primary navigation menu
+  default: true
+- type: text
+  name: primary_nav_title
+  label: Primary navigation title
+  description: The title of the primary navigation menu
+- type: field_group_list
+  name: primary_nav_links
+  label: Primary navigation menu links
+  description: List of primary navigation links
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: boolean
+  name: has_secondary_nav
+  label: Enable secondary navigation menu
+  description: Display the secondary navigation menu
+  default: true
+- type: text
+  name: secondary_nav_title
+  label: Secondary navigation title
+  description: The title of the secondary navigation menu
+- type: field_group_list
+  name: secondary_nav_links
+  label: Secondary navigation menu links
+  description: List of secondary navigation links
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: boolean
+  name: has_tertiary_nav
+  label: Enable tertiary navigation menu
+  description: Display the tertiary navigation menu
+  default: true
+- type: text
+  name: tertiary_nav_title
+  label: Tertiary navigation title
+  description: The title of the tertiary navigation menu
+- type: field_group_list
+  name: tertiary_nav_links
+  label: Tertiary navigation menu links
+  description: List of tertiary navigation links
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: boolean
+  name: has_social
+  label: Enable social links
+  description: Display the social links
+  default: true
+- type: field_group_list
+  name: social_links
+  label: Social links
+  description: List of social links
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: text
+  name: content
+  label: Footer content
+  description: The copyright text
+- type: field_group_list
+  name: links
+  label: Links
+  description: A list of links displayed next to the copyright text
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: footer
+  config:
+    required: true

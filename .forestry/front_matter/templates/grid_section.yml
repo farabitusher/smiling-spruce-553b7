@@ -1,0 +1,193 @@
+---
+label: Grid section
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the section
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the section displayed above the title
+- type: field_group_list
+  name: actions
+  label: Action buttons
+  description: Action buttons displayed below section items
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: field_group_list
+  name: grid_items
+  label: Grid items
+  fields:
+  - type: include
+    name: include_grid_item
+    label: Item
+    template: grid_item
+  config:
+    labelField: title
+- type: select
+  name: grid_cols
+  label: Grid columns
+  description: Show the specified number of items in a grid row
+  default: three
+  config:
+    source:
+      type: custom
+    options:
+    - two
+    - three
+    - four
+- type: select
+  name: grid_gap_vert
+  label: Grid gap vertical
+  description: The vertical spacing between grid items
+  default: small
+  config:
+    source:
+      type: custom
+    options:
+    - small
+    - medium
+    - large
+- type: select
+  name: grid_gap_horiz
+  label: Grid gap horizontal
+  description: The horizontal spacing between grid items
+  default: small
+  config:
+    source:
+      type: custom
+    options:
+    - small
+    - medium
+    - large
+- type: boolean
+  name: enable_cards
+  label: Enable cards
+  description: >-
+    Display items as cards, i.e. add border, background and some padding around
+    the item content
+  default: false
+- type: select
+  name: align
+  label: Section alignment
+  description: >-
+    The horizontal alignment of the section content (title, subtitle, action
+    buttons)
+  default: center
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: select
+  name: padding_top
+  label: Section top padding
+  description: The padding area (space) on the top of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- type: select
+  name: padding_bottom
+  label: Section bottom padding
+  description: The padding area (space) on the bottom of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- type: boolean
+  name: has_border
+  label: Section border
+  description: Add section bottom border
+  default: false
+- type: select
+  name: background_color
+  label: Background color
+  description: The background color of the section
+  default: none
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - primary
+    - secondary
+- type: file
+  name: background_image
+  label: Background image
+  description: The image displayed in the background of the section
+- type: number
+  name: background_image_opacity
+  label: Background image opacity
+  description: An integer between 0 and 100. A lower value makes the image more transparent
+- type: select
+  name: background_image_size
+  label: Background image size
+  description: The size of the background image
+  default: cover
+  config:
+    source:
+      type: custom
+    options:
+    - auto
+    - contain
+    - cover
+- type: select
+  name: background_image_position
+  label: Background image position
+  description: >-
+    The starting position of a background image. The first value is the
+    horizontal position, and the second value is the vertical
+  default: center center
+  config:
+    source:
+      type: custom
+    options:
+    - left top
+    - left center
+    - left bottom
+    - center top
+    - center center
+    - center bottom
+    - right top
+    - right center
+    - right bottom
+- type: select
+  name: background_image_repeat
+  label: Background image repeat
+  description: Repeat the image to cover the whole area
+  default: no-repeat
+  config:
+    source:
+      type: custom
+    options:
+    - repeat
+    - no-repeat
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: grid_section
+  config:
+    required: true

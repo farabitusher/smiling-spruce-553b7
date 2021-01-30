@@ -1,0 +1,235 @@
+---
+label: Form section
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the section
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the section displayed below the title
+- type: select
+  name: title_align
+  label: 'Title, subtitle alignment'
+  description: The horizontal alignment of the section title and subtitle
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: textarea
+  name: content
+  label: Content
+  description: The text content of the section
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: select
+  name: content_align
+  label: Content alignment
+  description: The horizontal alignment of the section text content
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: select
+  name: form_position
+  label: Form position
+  description: The position of the form relative to the text content of the section
+  default: bottom
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - top
+    - bottom
+- type: select
+  name: form_width
+  label: Form width
+  description: >-
+    The form container width as a percentage of the section width. Used only
+    when the form position is set to "left" or "right"
+  default: fifty
+  config:
+    source:
+      type: custom
+    options:
+    - fourty
+    - fifty
+    - sixty
+- type: select
+  name: form_layout
+  label: Form layout
+  description: >-
+    The layout of the form. "Inline" layout can only be used if the form has one
+    input field
+  default: stacked
+  config:
+    source:
+      type: custom
+    options:
+    - stacked
+    - inline
+- type: boolean
+  name: enable_card
+  label: Display form in a box
+  description: >-
+    Display form inside a box, i.e. add border and background to the form
+    container
+  default: false
+- type: text
+  name: form_id
+  label: Form ID
+  description: A unique identifier of the form. Must not contain whitespace
+  config:
+    required: true
+- type: text
+  name: form_action
+  label: Form action
+  description: >-
+    The path of your custom "success" page, if you want to replace the default
+    success message.
+- type: field_group_list
+  name: form_fields
+  label: Form fields
+  fields:
+  - type: include
+    name: include_form_field
+    label: Form field
+    template: form_field
+  config:
+    labelField: name
+- type: text
+  name: submit_label
+  label: Submit button label
+  config:
+    required: true
+- type: select
+  name: align_vert
+  label: Section vertical alignment
+  description: >-
+    The vertical alignment of the section text content and form. Used only when
+    the form position is set to "left" or "right"
+  default: top
+  config:
+    source:
+      type: custom
+    options:
+    - top
+    - middle
+    - bottom
+- type: select
+  name: padding_top
+  label: Section top padding
+  description: The padding area (space) on the top of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- type: select
+  name: padding_bottom
+  label: Section bottom padding
+  description: The padding area (space) on the bottom of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- type: boolean
+  name: has_border
+  label: Section border
+  description: Add section bottom border
+  default: false
+- type: select
+  name: background_color
+  label: Background color
+  description: The background color of the section
+  default: none
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - primary
+    - secondary
+- type: file
+  name: background_image
+  label: Background image
+  description: The image displayed in the background of the section
+- type: number
+  name: background_image_opacity
+  label: Background image opacity
+  description: An integer between 0 and 100. A lower value makes the image more transparent
+- type: select
+  name: background_image_size
+  label: Background image size
+  description: The size of the background image
+  default: cover
+  config:
+    source:
+      type: custom
+    options:
+    - auto
+    - contain
+    - cover
+- type: select
+  name: background_image_position
+  label: Background image position
+  description: >-
+    The starting position of a background image. The first value is the
+    horizontal position, and the second value is the vertical
+  default: center center
+  config:
+    source:
+      type: custom
+    options:
+    - left top
+    - left center
+    - left bottom
+    - center top
+    - center center
+    - center bottom
+    - right top
+    - right center
+    - right bottom
+- type: select
+  name: background_image_repeat
+  label: Background image repeat
+  description: Repeat the image to cover the whole area
+  default: no-repeat
+  config:
+    source:
+      type: custom
+    options:
+    - repeat
+    - no-repeat
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: form_section
+  config:
+    required: true

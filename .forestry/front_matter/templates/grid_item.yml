@@ -1,0 +1,142 @@
+---
+label: Item
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the item
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the item displayed below the title
+- type: select
+  name: title_align
+  label: 'Title, subtitle alignment'
+  description: The horizontal alignment of the item title and subtitle
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: textarea
+  name: content
+  label: Content
+  description: The text content of the item
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: select
+  name: content_align
+  label: Content alignment
+  description: The horizontal alignment of the item text content
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: field_group_list
+  name: actions
+  label: Action buttons
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: select
+  name: actions_align
+  label: Action buttons alignment
+  description: The horizontal alignment of the item action buttons
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: select
+  name: actions_width
+  label: Action buttons width
+  description: The width of action button
+  default: auto
+  config:
+    source:
+      type: custom
+    options:
+    - auto
+    - full-width
+- type: file
+  name: image
+  label: Image
+  description: The image of the item
+- type: text
+  name: image_alt
+  label: Image alt text
+  description: The alt text of the item image
+- type: select
+  name: image_position
+  label: Image position
+  description: The position of the image relative to the text content
+  default: top
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - top
+    - bottom
+- type: select
+  name: image_width
+  label: Image container width
+  description: >-
+    The image container width as a percentage of the item width. Used only when
+    the image position is set to "left" or "right"
+  default: fifty
+  config:
+    source:
+      type: custom
+    options:
+    - twenty-five
+    - thirty-three
+    - fourty
+    - fifty
+    - sixty
+- type: select
+  name: image_align
+  label: Image alignment
+  description: The horizontal alignment of the image
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: boolean
+  name: image_has_padding
+  label: Image padding
+  description: >-
+    Add padding (space) around the image. Used only when "Enable cards" is set
+    to true
+  default: false
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: grid_item
+  config:
+    required: true

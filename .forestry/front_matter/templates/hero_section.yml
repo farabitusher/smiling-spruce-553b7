@@ -1,0 +1,184 @@
+---
+label: Hero section
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the section
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the section displayed below the title
+- type: textarea
+  name: content
+  label: Content
+  description: The text content of the section
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: actions
+  label: Action buttons
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: file
+  name: image
+  label: Image
+  description: The image of the section
+- type: text
+  name: image_alt
+  label: Image alt text
+  description: The alt text of the section image
+- type: textarea
+  name: video_embed_html
+  label: Video Embed Code
+  description: The HTML embed code for your video
+- type: select
+  name: media_position
+  label: Image or video position
+  description: The position of the image or video relative to the text content
+  default: top
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - top
+    - bottom
+- type: select
+  name: media_width
+  label: Image or video width
+  description: >-
+    The image or video container width as a percentage of the section width.
+    Used only when the image or video position is set to "left" or "right"
+  default: fifty
+  config:
+    source:
+      type: custom
+    options:
+    - fourty
+    - fifty
+    - sixty
+- type: select
+  name: align
+  label: Section alignment
+  description: The horizontal alignment of the section content
+  default: left
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - center
+- type: select
+  name: padding_top
+  label: Section top padding
+  description: The padding area (space) on the top of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- type: select
+  name: padding_bottom
+  label: Section bottom padding
+  description: The padding area (space) on the bottom of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- type: boolean
+  name: has_border
+  label: Section border
+  description: Add section bottom border
+  default: false
+- type: select
+  name: background_color
+  label: Background color
+  description: The background color of the section
+  default: none
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - primary
+    - secondary
+- type: file
+  name: background_image
+  label: Background image
+  description: The image displayed in the background of the section
+- type: number
+  name: background_image_opacity
+  label: Background image opacity
+  description: An integer between 0 and 100. A lower value makes the image more transparent
+- type: select
+  name: background_image_size
+  label: Background image size
+  description: The size of the background image
+  default: cover
+  config:
+    source:
+      type: custom
+    options:
+    - auto
+    - contain
+    - cover
+- type: select
+  name: background_image_position
+  label: Background image position
+  description: >-
+    The starting position of a background image. The first value is the
+    horizontal position, and the second value is the vertical
+  default: center center
+  config:
+    source:
+      type: custom
+    options:
+    - left top
+    - left center
+    - left bottom
+    - center top
+    - center center
+    - center bottom
+    - right top
+    - right center
+    - right bottom
+- type: select
+  name: background_image_repeat
+  label: Background image repeat
+  description: Repeat the image to cover the whole area
+  default: no-repeat
+  config:
+    source:
+      type: custom
+    options:
+    - repeat
+    - no-repeat
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: hero_section
+  config:
+    required: true

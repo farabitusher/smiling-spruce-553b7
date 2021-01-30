@@ -1,0 +1,33 @@
+---
+label: Tag
+hide_body: true
+fields:
+- type: text
+  name: id
+  label: ID
+  description: 'A unique identifier used when filtering posts, e.g. "jamstack"'
+  config:
+    required: true
+- type: text
+  name: link
+  label: Link
+  description: 'The link to the tag page, e.g. "blog/tag/jamstack"'
+- type: text
+  name: title
+  label: Title
+  description: The title of the tag
+  config:
+    required: true
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: tag
+  config:
+    required: true
+pages:
+- src/data/tags/jamstack.yaml
+- src/data/tags/netlify.yaml
+- src/data/tags/sourcebit.yaml
+- src/data/tags/stackbit.yaml

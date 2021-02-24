@@ -4,7 +4,7 @@ sections:
   - type: hero_section
     template: hero_section
     title: This is my first blog i made for my friend santo
-    subtitle: Santo is a very talented person i veee
+    subtitle: Santo is a very talented person I ever seen
     content: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
       ligula, cursus id molestie vel.

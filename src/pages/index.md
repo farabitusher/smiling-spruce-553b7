@@ -11,7 +11,7 @@ sections:
     actions:
       - type: action
         template: action
-        label: Try Free
+        label: Learn More
         url: /pricing
         style: primary
       - type: action

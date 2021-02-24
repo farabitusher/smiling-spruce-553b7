@@ -29,7 +29,7 @@ sections:
     background_color: primary
   - type: grid_section
     template: grid_section
-    title: Image Grid
+    title: Company we work with
     subtitle: Grid Section Example
     grid_items:
       - type: grid_item

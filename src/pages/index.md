@@ -5,9 +5,9 @@ sections:
     template: hero_section
     title: This is my first blog i made for my friend santo
     subtitle: Santo is a very talented person I ever seen
-    content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-      ligula, cursus id molestie vel.
+    content: >
+      Santo is very friendly and has very good communication skills. Recently he
+      is learning pythone programming language. Best of luck for his
     actions:
       - type: action
         template: action

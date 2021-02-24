@@ -16,7 +16,7 @@ sections:
         style: primary
       - type: action
         template: action
-        label: Learn More
+        label: Contract me
         url: /features
         style: secondary
     image: images/classic/hero.png
